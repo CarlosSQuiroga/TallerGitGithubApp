@@ -78,7 +78,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(14.dp))
 
             Text(
-                text = "Usuario",
+                text = "Carlos Sanchez",
                 fontSize = 19.sp,
                 color = Color(0xFF667085)
             )
@@ -86,7 +86,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(6.dp))
 
             Text(
-                text = "Descripcion",
+                text = "Desarrollador Jr.",
                 fontSize = 14.sp,
                 color = Color(0xFF98A2B3)
             )
@@ -100,7 +100,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "-",
+                text = "Edad: 20 Años",
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 14.sp,
                 color = Color(0xFF667085)
@@ -109,7 +109,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(10.dp))
 
             Text(
-                text = "-",
+                text = "Correo: juniorcarlose@gmail.com",
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 14.sp,
                 color = Color(0xFF667085)
@@ -118,7 +118,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(10.dp))
 
             Text(
-                text = "-",
+                text = "Bucaramanga, Colombia",
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 14.sp,
                 color = Color(0xFF667085)
@@ -141,13 +141,21 @@ fun Perfil() {
 
             Spacer(modifier = Modifier.height(20.dp))
 
+
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(55.dp)
                     .clip(RoundedCornerShape(12.dp))
-                    .background(Color(0xFFB3D9F5))
-            )
+                    .background(Color(0xFF474eff)),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = "Contactar Conmigo",
+                    color = Color.White,
+                    fontSize = 20.sp,
+                )
+            }
         }
     }
 }
