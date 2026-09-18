@@ -133,7 +133,7 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "-",
+                text = "Estoy interesado en el desarrollo de aplicaciones Móviles, en especial aquellas que pueden servir al usuario, cumplir con un servicio, o ayudar con algún problema que se tenga en la vida cotidiana. \n\nMe encanta la lógica detrás de las interfaces intuitivas para el usuario, con las funcionalidades adecuadas para ayudarlos sin saturar la pantalla.",
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 14.sp,
                 color = Color(0xFF667085)
@@ -142,19 +142,26 @@ fun Perfil() {
             Spacer(modifier = Modifier.height(20.dp))
 
 
-            Box(
+            Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(55.dp)
-                    .clip(RoundedCornerShape(12.dp))
-                    .background(Color(0xFF474eff)),
-                contentAlignment = Alignment.Center
+                    .fillMaxSize()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.Bottom
             ) {
-                Text(
-                    text = "Contactar Conmigo",
-                    color = Color.White,
-                    fontSize = 20.sp,
-                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(55.dp)
+                        .clip(RoundedCornerShape(12.dp))
+                        .background(Color(0xFF474eff)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "Contactar Conmigo",
+                        color = Color.White,
+                        fontSize = 20.sp
+                    )
+                }
             }
         }
     }
